@@ -1,6 +1,6 @@
 <?PHP
 /*
- * v0.1.1
+ * v2.0
  * cryptam_unxor.php: MalwareTracker.com Cryptam - command line script
  * unxor and unrol, get parameters from api, extract embedded exe, docs and pdfs
  */
@@ -79,7 +79,7 @@ if (isset($argv[1]) && is_file($argv[1])) {
 
 if ($submit == 1) {
 	echo "Submitting ".$argv[1]." to remote server\n";
-	$result = unserialize(mwtdocfile($argv[1]));
+	$result = json_decode(mwtdocfile($argv[1]), true);
 	if (isset($result['has_exe']) ) {
 		$ror = $result['key_rol'];
 		$key = $result['key'];
@@ -93,7 +93,7 @@ if ($submit == 1) {
 if ($api == 1) {
 	
 	echo "Accessing remote API for decoding params for $md5\n";
-	$result = unserialize(mwtdocreport($md5));
+	$result = json_decode(mwtdocreport($md5), true);
 	if (isset($result['has_exe']) ) {
 		$ror = $result['key_rol'];
 		$key = $result['key'];
@@ -257,7 +257,7 @@ function mwtdocfile($file, $email = '', $message = ''){
 
 function mwtdocreport($hash, $type='cryptam'){
 	$curl = curl_init();
-	$url =  "http://www.malwaretracker.com/docapirep.php?hash=$hash&type=$type";
+	$url =  "http://www.malwaretracker.com/docapirep.php?hash=$hash";
 	curl_setopt($curl, CURLOPT_URL, $url);
 	curl_setopt($curl, CURLOPT_POST, 0);
 	curl_setopt($curl, CURLOPT_HEADER, 0);
