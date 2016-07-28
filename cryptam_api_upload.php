@@ -1,7 +1,7 @@
 <?PHP
 /*
- * v0.1
- * mwtdocfile.php: MalwareTracker.com Cryptam - sample api uploader
+ * v2.0
+ * cryptam_api_upload.php: MalwareTracker.com Cryptam - sample api uploader
  * Upload docs from the command line. Edit CURLOPT_URL for your internal url.
  */
 
@@ -35,7 +35,7 @@ function mwtfile($file, $email = '', $message = ''){
 	curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible;) MWT API 1.0");
 
 	curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1); 
-	$data = array( "sample[]"=> "@$file", 'type' => 'xml');
+	$data = array( "sample[]"=> "@$file");
 	if ($message != '')
 		$data['message'] = $message;
 	if ($email != '')
