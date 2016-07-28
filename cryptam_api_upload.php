@@ -26,13 +26,13 @@ if (is_file($argv[1])) {
 
 function mwtfile($file, $email = '', $message = ''){
 	$curl = curl_init();
-	curl_setopt($curl, CURLOPT_URL, "http://www.malwaretracker.com/docapi.php");
+	curl_setopt($curl, CURLOPT_URL, "http://www.cryptam.com/docapi.php");
 	curl_setopt($curl, CURLOPT_POST, true);
 	curl_setopt($curl, CURLOPT_VERBOSE, 0);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); 
 	curl_setopt($curl, CURLOPT_HTTPHEADER, array('Expect:'));
 	curl_setopt($curl, CURLOPT_HEADER, 0); 
-	curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible;) MWT API 1.0");
+	curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible;) MWT API 2.0");
 
 	curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1); 
 	$data = array( "sample[]"=> "@$file");
