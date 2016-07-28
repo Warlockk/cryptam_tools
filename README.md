@@ -43,4 +43,10 @@ message: note or email headers
 
 email: your email address for report by emails
 
+Pulling dropped file strings:
+----------------------
+drop_files field get the strings link by changing s3://mwstore/samples/ to https://repo.cryptam.com/nodes/ and add .txt 
 
+### Example:
+
+https://repo.cryptam.com/nodes/6260af28efd479034e30f124584072b01d4f30b0d7ad35232cdbb699b49dbefb.virus.txt
