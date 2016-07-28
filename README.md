@@ -27,7 +27,7 @@ sha256: sha256
 
 A not found report will return json 'filename' "not found".
 
-Example:
+### Example:
 
 https://www.cryptam.com/docapirep.php?sha256=f6999386343503b2536f864aaa3d6ab95bb2714263ca65d895c9e992cec8c0fc
 
