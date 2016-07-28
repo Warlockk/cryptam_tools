@@ -50,3 +50,8 @@ drop_files field has a line per dropped file, get the strings link by changing s
 ### Example:
 
 https://repo.cryptam.com/nodes/6260af28efd479034e30f124584072b01d4f30b0d7ad35232cdbb699b49dbefb.virus.txt
+
+Limits
+------
+
+File uploads limited to approximately 12mb.
