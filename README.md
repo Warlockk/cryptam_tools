@@ -15,9 +15,13 @@ Or search:
 Get or POST https://www.cryptam.com/docapirep.php
 
 ### Query Params:
+
 hash: Any md5, sha1 or sha256
+
 md5: md5
+
 sha1: sha1
+
 sha256: sha 256
 
 A not found report will return json 'filename' "not found".
@@ -28,8 +32,11 @@ Upload file for analysis:
 POST https://www.cryptam.com/docapi.php
 
 ### Query Params:
-sample[]: File content:
+
+sample[]: File content
+
 message: note or email headers
+
 email: your email address for report by emails
 
 
