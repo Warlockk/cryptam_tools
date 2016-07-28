@@ -5,7 +5,7 @@ Cryptam document malware analysis tools to submit documents for analysis and col
 
 Get Report
 ----------
-You can check for a https://repo.cryptam.com/reports/**sha256**.json or **sha256**.html
+You can check for a https://repo.cryptam.com/reports/ **sha256**.json or **sha256**.html
 
 ### Example:
 
