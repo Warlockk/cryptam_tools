@@ -5,9 +5,10 @@ Cryptam document malware analysis tools to submit documents for analysis and col
 
 Get Report
 ----------
-You can check for a https://repo.cryptam.com/reports/<sha256>.json or .html
+You can check for a https://repo.cryptam.com/reports/**sha256**.json or **sha256**.html
 
 ### Example:
+
 https://repo.cryptam.com/reports/f6999386343503b2536f864aaa3d6ab95bb2714263ca65d895c9e992cec8c0fc.json
 
 Or search:
@@ -22,10 +23,13 @@ md5: md5
 
 sha1: sha1
 
-sha256: sha 256
+sha256: sha256
 
 A not found report will return json 'filename' "not found".
 
+Example:
+
+https://www.cryptam.com/docapirep.php?sha256=f6999386343503b2536f864aaa3d6ab95bb2714263ca65d895c9e992cec8c0fc
 
 Upload file for analysis:
 -------------------------
