@@ -1,7 +1,7 @@
 cryptam
 =======
 
-Cryptam document malware analysis tools to submit documents for analysis and collect reporting.
+Cryptam document malware analysis tools to submit documents for analysis and collect reporting. Default reporting is now returned only in JSON which is served from flat files.
 
 Get Report
 ----------
