@@ -1,19 +1,19 @@
 cryptam
 =======
 
-Cryptam document malware analysis tools to submit documents for analysis and collect reporting. Default reporting is now returned only in JSON which is served from flat files.
+Cryptam document malware analysis tools to submit documents for analysis and collect reporting. Default reporting is now returned only in JSON which is served from fast flat files.
 
 Get Report
 ----------
-You can check for a https://repo.cryptam.com/reports/ **sha256**.json or **sha256**.html
+You can check for a report with the document sha256 at https://repo.cryptam.com/reports/ **sha256**.json or **sha256**.html
 
 ### Example:
 
 https://repo.cryptam.com/reports/f6999386343503b2536f864aaa3d6ab95bb2714263ca65d895c9e992cec8c0fc.json
 
-Or search:
-----------
-Get or POST https://www.cryptam.com/docapirep.php
+Or search by any hash:
+---------------------
+GET or POST https://www.cryptam.com/docapirep.php
 
 ### Query Params:
 
@@ -45,7 +45,7 @@ email: your email address for report by emails
 
 Pulling dropped file strings:
 ----------------------
-drop_files field get the strings link by changing s3://mwstore/samples/ to https://repo.cryptam.com/nodes/ and add .txt 
+drop_files field has a line per dropped file, get the strings link by changing s3://mwstore/samples/ to https://repo.cryptam.com/nodes/ and add .txt 
 
 ### Example:
 
