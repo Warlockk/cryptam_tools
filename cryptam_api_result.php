@@ -23,14 +23,14 @@ if (isset($argv[1])) {
 
 function mwtreport($hash){
 	$curl = curl_init();
-	$url =  "http://www.malwaretracker.com/docapirep.php?hash=$hash";
+	$url =  "http://www.cryptam.com/docapirep.php?hash=$hash";
 	curl_setopt($curl, CURLOPT_URL, $url);
 	curl_setopt($curl, CURLOPT_POST, 0);
 	curl_setopt($curl, CURLOPT_HEADER, 0);
 	curl_setopt($curl, CURLOPT_HTTPHEADER, array('Expect:'));
 	curl_setopt($curl, CURLOPT_VERBOSE, 0);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true); 
-	curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible;) MWT API 1.0");
+	curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible;) MWT API 2.0");
 
 	curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1); 
 	$result = curl_exec($curl); 
