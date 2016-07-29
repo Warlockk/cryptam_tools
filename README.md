@@ -1,5 +1,6 @@
 cryptam
 =======
+<img src="https://www.cryptam.com/images/Cryptam-Icon-Colour.png" height="250">
 
 Cryptam document malware analysis tools to submit documents for analysis and collect reporting. Default reporting is now returned only in JSON which is served from fast flat files.
 
