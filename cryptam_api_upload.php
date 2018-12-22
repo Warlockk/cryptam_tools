@@ -30,6 +30,7 @@ function mwtfile($file, $email = '', $message = ''){
 	curl_setopt($curl, CURLOPT_POST, true);
 	curl_setopt($curl, CURLOPT_VERBOSE, 0);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); 
+	curl_setopt($curl, CURLOPT_SAFE_UPLOAD, false);
 	curl_setopt($curl, CURLOPT_HTTPHEADER, array('Expect:'));
 	curl_setopt($curl, CURLOPT_HEADER, 0); 
 	curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible;) MWT API 2.0");
